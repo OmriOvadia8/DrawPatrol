@@ -23,12 +23,15 @@ public class Line : MonoBehaviour
             SetPoint(position);
         }
     }
-    
+
 
     void SetPoint(Vector2 point)
     {
         points.Add(point);
+        lineRenderer.startColor = ColorChanger.currentColor; // Set the start color
+        lineRenderer.endColor = ColorChanger.currentColor;   // and end color
         lineRenderer.positionCount = points.Count;
         lineRenderer.SetPosition(points.Count - 1, point);
     }
+
 }
