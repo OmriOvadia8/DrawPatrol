@@ -5,6 +5,7 @@ public class SaveDrawing : MonoBehaviour
     private static SaveDrawing instance;
     private Camera myCam;
     private bool takeScreenshotNextFrame;
+    private int screenshotCounter = 1;
 
     private void Awake()
     {
@@ -22,9 +23,13 @@ public class SaveDrawing : MonoBehaviour
             Texture2D renderResult = new(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
             Rect rect = new(0, 0, renderTexture.width, renderTexture.height);
             renderResult.ReadPixels(rect, 0, 0);
+            
+            
+            string fileName = "SavedImage" + screenshotCounter.ToString("D2") + ".png";
             byte[] byteArray = renderResult.EncodeToPNG();
-            System.IO.File.WriteAllBytes(Application.dataPath + "/SavedImage.png", byteArray);
-            Debug.Log("Saved Image!");
+            System.IO.File.WriteAllBytes(Application.dataPath + "/Gallery/" + fileName, byteArray);
+            Debug.Log("Saved Image: " + fileName);
+            screenshotCounter++;
             
             RenderTexture.ReleaseTemporary(renderTexture);
             myCam.targetTexture = null;
