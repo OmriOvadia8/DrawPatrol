@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class SaveDrawing : MonoBehaviour
@@ -11,6 +12,9 @@ public class SaveDrawing : MonoBehaviour
 
     private List<DrawingInfo> savedDrawings = new List<DrawingInfo>();
 
+    private string saveDirectory;
+
+
     [Serializable]
     public class DrawingInfo
     {
@@ -19,7 +23,17 @@ public class SaveDrawing : MonoBehaviour
         public bool sendToSoldiers;
     }
 
-    
+    private void Start()
+    {
+        // Initialize the save directory
+        saveDirectory = Path.Combine(Application.persistentDataPath, "Gallery");
+        // Create the directory if it doesn't exist
+        if (!Directory.Exists(saveDirectory))
+        {
+            Directory.CreateDirectory(saveDirectory);
+        }
+    }
+
     private void Awake()
     {
         instance = this;
@@ -33,17 +47,18 @@ public class SaveDrawing : MonoBehaviour
             takeScreenshotNextFrame = false;
             RenderTexture renderTexture = myCam.targetTexture;
 
-            Texture2D renderResult = new(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
-            Rect rect = new(0, 0, renderTexture.width, renderTexture.height);
+            Texture2D renderResult = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
+            Rect rect = new Rect(0, 0, renderTexture.width, renderTexture.height);
             renderResult.ReadPixels(rect, 0, 0);
-            
-            
-            string fileName = "SavedImage" + screenshotCounter.ToString("D2") + ".png";
+
+            // string fileName = "SavedImage" + screenshotCounter.ToString("D2") + ".png";
+            string fileName = "4.png";
             byte[] byteArray = renderResult.EncodeToPNG();
-            System.IO.File.WriteAllBytes(Application.dataPath + "/Gallery/" + fileName, byteArray);
+            string filePath = Path.Combine(saveDirectory, fileName);
+            File.WriteAllBytes(filePath, byteArray); // changed to use the saveDirectory
             Debug.Log("Saved Image: " + fileName);
             screenshotCounter++;
-            
+
             DrawingInfo drawingInfo = new DrawingInfo
             {
                 fileName = fileName,
@@ -52,7 +67,6 @@ public class SaveDrawing : MonoBehaviour
             };
             savedDrawings.Add(drawingInfo);
 
-            
             RenderTexture.ReleaseTemporary(renderTexture);
             myCam.targetTexture = null;
         }
@@ -64,8 +78,5 @@ public class SaveDrawing : MonoBehaviour
         takeScreenshotNextFrame = true;
     }
 
-    public static void TakeScreenshot_Static(int width, int height)
-    {
-        instance.TakeScreenshot(width, height);
-    }
+    public static void TakeScreenshot_Static(int width, int height) => instance.TakeScreenshot(width, height);
 }
