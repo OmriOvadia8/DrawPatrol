@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -24,14 +23,14 @@ public class Line : MonoBehaviour
         }
     }
 
-
     void SetPoint(Vector2 point)
     {
         points.Add(point);
-        lineRenderer.startColor = ColorChanger.currentColor; // Set the start color
-        lineRenderer.endColor = ColorChanger.currentColor;   // and end color
+        lineRenderer.startWidth = LineSettings.CurrentWidth;
+        lineRenderer.endWidth = LineSettings.CurrentWidth;
+        lineRenderer.startColor = LineSettings.CurrentColor;
+        lineRenderer.endColor = LineSettings.CurrentColor;
         lineRenderer.positionCount = points.Count;
         lineRenderer.SetPosition(points.Count - 1, point);
     }
-
 }
