@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SaveDrawing : MonoBehaviour
@@ -7,6 +9,17 @@ public class SaveDrawing : MonoBehaviour
     private bool takeScreenshotNextFrame;
     private int screenshotCounter = 1;
 
+    private List<DrawingInfo> savedDrawings = new List<DrawingInfo>();
+
+    [Serializable]
+    public class DrawingInfo
+    {
+        public string fileName;
+        public DateTime saveTime;
+        public bool sendToSoldiers;
+    }
+
+    
     private void Awake()
     {
         instance = this;
@@ -30,6 +43,15 @@ public class SaveDrawing : MonoBehaviour
             System.IO.File.WriteAllBytes(Application.dataPath + "/Gallery/" + fileName, byteArray);
             Debug.Log("Saved Image: " + fileName);
             screenshotCounter++;
+            
+            DrawingInfo drawingInfo = new DrawingInfo
+            {
+                fileName = fileName,
+                saveTime = DateTime.Now,
+                sendToSoldiers = false
+            };
+            savedDrawings.Add(drawingInfo);
+
             
             RenderTexture.ReleaseTemporary(renderTexture);
             myCam.targetTexture = null;
