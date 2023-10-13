@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PaintingScene.unity
     guid: 8f3ba95eca641c54aa3361bb90d5dc15
+  - enabled: 1
+    path: Assets/Scenes/Gallery.unity
+    guid: 0a1874a2db2d21645a4debb8c2018f25
   m_configObjects: {}
