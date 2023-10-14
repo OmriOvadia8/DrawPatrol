@@ -5494,6 +5494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553518482}
   - component: {fileID: 1553518483}
+  - component: {fileID: 1553518484}
   m_Layer: 5
   m_Name: Container
   m_TagString: Untagged
@@ -5547,6 +5548,20 @@ MonoBehaviour:
   m_Spacing: {x: 100, y: -700}
   m_Constraint: 1
   m_ConstraintCount: 1
+--- !u!114 &1553518484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553518481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e997d5a82a768714cbcb73be46ef8184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thumbnailPrefab: {fileID: 4036196320132315281, guid: fe6669c48f76be14db1cca3a20528120, type: 3}
+  galleryPanel: {fileID: 1553518482}
 --- !u!1 &1564350514
 GameObject:
   m_ObjectHideFlags: 0
