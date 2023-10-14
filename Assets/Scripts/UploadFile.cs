@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-//For firebase storage
+
 using Firebase;
 using Firebase.Extensions;
 using Firebase.Storage;
@@ -41,7 +41,7 @@ public class UploadFile : MonoBehaviour
         var newMetadata = new MetadataChange();
         newMetadata.ContentType = "image/png";
 
-        StorageReference uploadRef = storageReference.Child("uploads/" + fileName);
+        StorageReference uploadRef = storageReference.Child("uploads/" + User.Instance.UserId + "/" + fileName);
         Debug.Log("File upload started");
         uploadRef.PutBytesAsync(imageBytes, newMetadata).ContinueWithOnMainThread((task) => {
             if (task.IsFaulted || task.IsCanceled)
@@ -57,9 +57,11 @@ public class UploadFile : MonoBehaviour
 
     public void OnUploadButtonPressed()
     {
-        string fileName = "4.png"; // replace with your actual image file name
-        string filePath = Application.persistentDataPath + "/Gallery/" + fileName;
+        string fileName = User.Instance.NumberOfDrawings + ".png";
+        string filePath = Path.Combine(User.Instance.UserDirectoryPath, fileName);
 
         UploadImageFromPath(filePath, fileName);
     }
+
+
 }
