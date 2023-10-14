@@ -7,6 +7,7 @@ public class UploadFile : MonoBehaviour
 {
     FirebaseStorage storage;
     StorageReference storageReference;
+    [SerializeField] DrawingUIController uiControl;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class UploadFile : MonoBehaviour
 
     private void UploadImage(byte[] imageBytes, string fileName)
     {
+        uiControl.ShowSendingNowText();
         var newMetadata = new MetadataChange();
         newMetadata.ContentType = "image/png";
 
@@ -43,6 +45,7 @@ public class UploadFile : MonoBehaviour
             else
             {
                 Debug.Log("File Uploaded Successfully!");
+                uiControl.OpenSentCompletePopup();
             }
         });
     }
