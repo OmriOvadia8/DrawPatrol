@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 55000928}
   - component: {fileID: 55000927}
   m_Layer: 5
-  m_Name: Yes Button
+  m_Name: Send Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,6 +343,18 @@ MonoBehaviour:
       - m_Target: {fileID: 896348401}
         m_TargetAssemblyTypeName: UploadFile, Assembly-CSharp
         m_MethodName: OnUploadButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 993627466}
+        m_TargetAssemblyTypeName: DrawingUIController, Assembly-CSharp
+        m_MethodName: OnImageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2037,6 +2049,8 @@ MonoBehaviour:
   savePopup: {fileID: 959122103}
   sentCompletePopup: {fileID: 1917269849}
   sendingText: {fileID: 2121653959}
+  doSendButton: {fileID: 55000927}
+  dontSaveButton: {fileID: 1722972825}
   saveButton: {fileID: 1280189324}
   backToMenuButton: {fileID: 346933241}
 --- !u!4 &993627467
@@ -3535,7 +3549,7 @@ GameObject:
   - component: {fileID: 1722972826}
   - component: {fileID: 1722972825}
   m_Layer: 5
-  m_Name: No Button
+  m_Name: Dont Send Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3609,6 +3623,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: LoadSceneByIndex
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 896348401}
+        m_TargetAssemblyTypeName: UploadFile, Assembly-CSharp
+        m_MethodName: NotUploadingChoice
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -7,6 +7,8 @@ public class DrawingUIController : MonoBehaviour
     [SerializeField] private GameObject savePopup;
     [SerializeField] private GameObject sentCompletePopup;
     [SerializeField] private GameObject sendingText;
+    [SerializeField] private Button doSendButton;
+    [SerializeField] private Button dontSaveButton;
     [SerializeField] private Button saveButton;
     [SerializeField] private Button backToMenuButton;
 
@@ -19,6 +21,8 @@ public class DrawingUIController : MonoBehaviour
         sendPopup.SetActive(false);
         sentCompletePopup.SetActive(false);
         saveButton.interactable = true;
+        doSendButton.interactable = true;
+        dontSaveButton.interactable = true;
     }
 
     public void OpenSentCompletePopup()
@@ -44,8 +48,10 @@ public class DrawingUIController : MonoBehaviour
 
     public void CloseSavePopup() => ResetUI();
 
-    public void ShowSendingNowText()
+    public void OnImageSent()
     {
         sendingText.SetActive(true);
+        doSendButton.interactable = false;
+        dontSaveButton.interactable = false;
     }
 }

@@ -31,7 +31,6 @@ public class UploadFile : MonoBehaviour
 
     private void UploadImage(byte[] imageBytes, string fileName)
     {
-        uiControl.ShowSendingNowText();
         var newMetadata = new MetadataChange();
         newMetadata.ContentType = "image/png";
 
@@ -61,4 +60,6 @@ public class UploadFile : MonoBehaviour
         UploadImageFromPath(filePath, fileName);
         User.Instance.IncrementNumberOfDrawings();
     }
+
+    public void NotUploadingChoice() => User.Instance.IncrementNumberOfDrawings();
 }
