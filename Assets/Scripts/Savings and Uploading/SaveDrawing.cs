@@ -9,9 +9,6 @@ public class SaveDrawing : MonoBehaviour
     private Camera myCam;
     private bool takeScreenshotNextFrame;
 
-    private List<DrawingInfo> savedDrawings = new List<DrawingInfo>();
-    public DrawingInfo curr_drawing;
-
     [Serializable]
     public class DrawingInfo
     {
@@ -43,14 +40,14 @@ public class SaveDrawing : MonoBehaviour
             File.WriteAllBytes(filePath, byteArray); 
             Debug.Log("Saved Image: " + fileName);
 
-            DrawingInfo drawingInfo = new DrawingInfo
-            {
-                fileName = fileName,
-                saveTime = DateTime.Now,
-                sendToSoldiers = false
-            };
-            savedDrawings.Add(drawingInfo);
-            curr_drawing = drawingInfo;
+            // DrawingInfo drawingInfo = new DrawingInfo
+            // {
+            //     fileName = fileName,
+            //     saveTime = DateTime.Now,
+            //     sendToSoldiers = false
+            // };
+           // savedDrawings.Add(drawingInfo);
+           // curr_drawing = drawingInfo;
 
             RenderTexture.ReleaseTemporary(renderTexture);
             myCam.targetTexture = null;
