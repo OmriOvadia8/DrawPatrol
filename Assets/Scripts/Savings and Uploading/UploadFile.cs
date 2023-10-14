@@ -1,12 +1,8 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
-
-using Firebase;
 using Firebase.Extensions;
 using Firebase.Storage;
-using UnityEditor.VersionControl;
+
 
 public class UploadFile : MonoBehaviour
 {
@@ -21,13 +17,10 @@ public class UploadFile : MonoBehaviour
 
     public void UploadImageFromPath(string filePath, string fileName)
     {
-        // Check if file exists
         if (File.Exists(filePath))
         {
-            // Read the file to bytes
             byte[] imageBytes = File.ReadAllBytes(filePath);
 
-            // Call the upload method
             UploadImage(imageBytes, fileName);
         }
         else
@@ -55,13 +48,13 @@ public class UploadFile : MonoBehaviour
         });
     }
 
-    public void OnUploadButtonPressed()
+    public void OnUploadButtonPressed() => Invoke(nameof(DelayedUpload), 0.5f);
+
+    private void DelayedUpload()
     {
         string fileName = User.Instance.NumberOfDrawings + ".png";
         string filePath = Path.Combine(User.Instance.UserDirectoryPath, fileName);
 
         UploadImageFromPath(filePath, fileName);
     }
-
-
 }
