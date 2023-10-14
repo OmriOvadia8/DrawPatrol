@@ -9,13 +9,6 @@ public class SaveDrawing : MonoBehaviour
     private Camera myCam;
     private bool takeScreenshotNextFrame;
 
-    [Serializable]
-    public class DrawingInfo
-    {
-        public string fileName;
-        public DateTime saveTime;
-        public bool sendToSoldiers;
-    }
 
     private void Awake()
     {
@@ -39,15 +32,6 @@ public class SaveDrawing : MonoBehaviour
             string filePath = Path.Combine(User.Instance.UserDirectoryPath, fileName);
             File.WriteAllBytes(filePath, byteArray); 
             Debug.Log("Saved Image: " + fileName);
-
-            // DrawingInfo drawingInfo = new DrawingInfo
-            // {
-            //     fileName = fileName,
-            //     saveTime = DateTime.Now,
-            //     sendToSoldiers = false
-            // };
-           // savedDrawings.Add(drawingInfo);
-           // curr_drawing = drawingInfo;
 
             RenderTexture.ReleaseTemporary(renderTexture);
             myCam.targetTexture = null;

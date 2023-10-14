@@ -29,8 +29,7 @@ public class Gallery : MonoBehaviour
             // Assign the loaded image to the thumbnail's Image component
             Image thumbnailImage = thumbnail.GetComponent<Image>();
             thumbnailImage.sprite = Sprite.Create(photoTexture, new Rect(0, 0, photoTexture.width, photoTexture.height), Vector2.one * 0.5f);
-
-            // You can set the thumbnail's position and other properties as needed
+            
         }
     }
 }
