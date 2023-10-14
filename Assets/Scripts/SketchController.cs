@@ -16,7 +16,7 @@ public class SketchController : MonoBehaviour
         }
     }
 
-    public void OnButtonClick()
+    public void ChooseSketch()
     {
         SketchManager.Instance.SelectedSketch = sketch;
         if (sceneController != null)

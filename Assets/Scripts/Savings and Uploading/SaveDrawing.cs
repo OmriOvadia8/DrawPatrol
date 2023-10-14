@@ -8,24 +8,14 @@ public class SaveDrawing : MonoBehaviour
     private static SaveDrawing instance;
     private Camera myCam;
     private bool takeScreenshotNextFrame;
-    private int screenshotCounter = 1;
 
-    // private List<DrawingInfo> savedDrawings = new List<DrawingInfo>();
-    //public DrawingInfo curr_drawing;
-
-    private string saveDirectory;
-    private string userKey;
-
-
-    // [Serializable]
-    // public class DrawingInfo
-    // {
-    //     public string fileName;
-    //     public DateTime saveTime;
-    //     public bool sendToSoldiers;
-    // }
-
-
+    [Serializable]
+    public class DrawingInfo
+    {
+        public string fileName;
+        public DateTime saveTime;
+        public bool sendToSoldiers;
+    }
 
     private void Awake()
     {
@@ -47,7 +37,7 @@ public class SaveDrawing : MonoBehaviour
             string fileName = User.Instance.NumberOfDrawings + ".png";
             byte[] byteArray = renderResult.EncodeToPNG();
             string filePath = Path.Combine(User.Instance.UserDirectoryPath, fileName);
-            File.WriteAllBytes(filePath, byteArray); // changed to use the saveDirectory
+            File.WriteAllBytes(filePath, byteArray); 
             Debug.Log("Saved Image: " + fileName);
 
             // DrawingInfo drawingInfo = new DrawingInfo
