@@ -62,13 +62,11 @@ public class SaveDrawing : MonoBehaviour
             Rect rect = new Rect(0, 0, renderTexture.width, renderTexture.height);
             renderResult.ReadPixels(rect, 0, 0);
             
-            string fileName = screenshotCounter + ".png";
+            string fileName = User.Instance.NumberOfDrawings + ".png";
             byte[] byteArray = renderResult.EncodeToPNG();
             string filePath = Path.Combine(User.Instance.UserDirectoryPath, fileName);
             File.WriteAllBytes(filePath, byteArray); // changed to use the saveDirectory
             Debug.Log("Saved Image: " + fileName);
-            screenshotCounter++;
-            User.Instance.IncrementNumberOfDrawings();
 
             DrawingInfo drawingInfo = new DrawingInfo
             {

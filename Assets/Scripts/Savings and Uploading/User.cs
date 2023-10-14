@@ -25,7 +25,7 @@ public class User
             Directory.CreateDirectory(UserDirectoryPath);
         }
 
-        NumberOfDrawings = 0;
+        NumberOfDrawings = PlayerPrefs.GetInt("NumberOfDrawings", 0);
     }
 
     public static User Instance
@@ -43,5 +43,7 @@ public class User
     public void IncrementNumberOfDrawings()
     {
         NumberOfDrawings++;
+        PlayerPrefs.SetInt("NumberOfDrawings", NumberOfDrawings);
+        PlayerPrefs.Save();  
     }
 }

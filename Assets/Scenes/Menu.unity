@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 1758799}
   - component: {fileID: 1758798}
   - component: {fileID: 1758797}
+  - component: {fileID: 1758800}
   m_Layer: 5
   m_Name: Sonics Sketch
   m_TagString: Untagged
@@ -243,6 +244,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758795}
   m_CullTransparentMesh: 1
+--- !u!114 &1758800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &33551718
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +269,7 @@ GameObject:
   - component: {fileID: 33551722}
   - component: {fileID: 33551721}
   - component: {fileID: 33551720}
+  - component: {fileID: 33551723}
   m_Layer: 5
   m_Name: Power Rangers Sketch
   m_TagString: Untagged
@@ -363,6 +378,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33551718}
   m_CullTransparentMesh: 1
+--- !u!114 &33551723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33551718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &102639606
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +536,7 @@ GameObject:
   - component: {fileID: 110403348}
   - component: {fileID: 110403347}
   - component: {fileID: 110403346}
+  - component: {fileID: 110403349}
   m_Layer: 5
   m_Name: Little Pony Sketch
   m_TagString: Untagged
@@ -616,6 +645,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110403344}
   m_CullTransparentMesh: 1
+--- !u!114 &110403349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110403344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &197148559
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +670,7 @@ GameObject:
   - component: {fileID: 197148563}
   - component: {fileID: 197148562}
   - component: {fileID: 197148561}
+  - component: {fileID: 197148564}
   m_Layer: 5
   m_Name: MickyMouse Sketch
   m_TagString: Untagged
@@ -736,6 +779,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197148559}
   m_CullTransparentMesh: 1
+--- !u!114 &197148564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197148559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &207243653
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +937,7 @@ GameObject:
   - component: {fileID: 274963472}
   - component: {fileID: 274963471}
   - component: {fileID: 274963470}
+  - component: {fileID: 274963473}
   m_Layer: 5
   m_Name: Pikachu Sketch
   m_TagString: Untagged
@@ -989,6 +1046,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274963468}
   m_CullTransparentMesh: 1
+--- !u!114 &274963473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274963468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &433314681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,6 +1071,7 @@ GameObject:
   - component: {fileID: 433314685}
   - component: {fileID: 433314684}
   - component: {fileID: 433314683}
+  - component: {fileID: 433314686}
   m_Layer: 5
   m_Name: Unicorn sketch
   m_TagString: Untagged
@@ -1109,6 +1180,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433314681}
   m_CullTransparentMesh: 1
+--- !u!114 &433314686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433314681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &495384254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1365,7 @@ GameObject:
   - component: {fileID: 541534320}
   - component: {fileID: 541534319}
   - component: {fileID: 541534318}
+  - component: {fileID: 541534321}
   m_Layer: 5
   m_Name: Jasmin Sketch
   m_TagString: Untagged
@@ -1389,6 +1474,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541534316}
   m_CullTransparentMesh: 1
+--- !u!114 &541534321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541534316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &555212524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,6 +1499,7 @@ GameObject:
   - component: {fileID: 555212528}
   - component: {fileID: 555212527}
   - component: {fileID: 555212526}
+  - component: {fileID: 555212529}
   m_Layer: 5
   m_Name: Batman Sketch
   m_TagString: Untagged
@@ -1509,6 +1608,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555212524}
   m_CullTransparentMesh: 1
+--- !u!114 &555212529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555212524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &557460467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,6 +1633,7 @@ GameObject:
   - component: {fileID: 557460471}
   - component: {fileID: 557460470}
   - component: {fileID: 557460469}
+  - component: {fileID: 557460472}
   m_Layer: 5
   m_Name: Babie flag2 Sketch
   m_TagString: Untagged
@@ -1629,6 +1742,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557460467}
   m_CullTransparentMesh: 1
+--- !u!114 &557460472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557460467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &560394464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,6 +2416,7 @@ GameObject:
   - component: {fileID: 719660105}
   - component: {fileID: 719660104}
   - component: {fileID: 719660103}
+  - component: {fileID: 719660106}
   m_Layer: 5
   m_Name: Ariel mermaid Sketch
   m_TagString: Untagged
@@ -2398,6 +2525,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719660101}
   m_CullTransparentMesh: 1
+--- !u!114 &719660106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719660101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &729261014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,6 +2595,7 @@ GameObject:
   - component: {fileID: 761932407}
   - component: {fileID: 761932406}
   - component: {fileID: 761932405}
+  - component: {fileID: 761932408}
   m_Layer: 5
   m_Name: Babie flag3 Sketch
   m_TagString: Untagged
@@ -2563,6 +2704,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761932403}
   m_CullTransparentMesh: 1
+--- !u!114 &761932408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761932403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &776320700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,6 +2909,7 @@ GameObject:
   - component: {fileID: 990813792}
   - component: {fileID: 990813791}
   - component: {fileID: 990813790}
+  - component: {fileID: 990813793}
   m_Layer: 5
   m_Name: Iron Man Hands Sketch
   m_TagString: Untagged
@@ -2863,6 +3018,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990813788}
   m_CullTransparentMesh: 1
+--- !u!114 &990813793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990813788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1111803641
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,6 +3326,7 @@ GameObject:
   - component: {fileID: 1173685200}
   - component: {fileID: 1173685199}
   - component: {fileID: 1173685198}
+  - component: {fileID: 1173685201}
   m_Layer: 5
   m_Name: MiniMouse Sketch
   m_TagString: Untagged
@@ -3266,6 +3435,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173685196}
   m_CullTransparentMesh: 1
+--- !u!114 &1173685201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173685196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1184824535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3770,6 +3952,7 @@ GameObject:
   - component: {fileID: 1304540367}
   - component: {fileID: 1304540366}
   - component: {fileID: 1304540365}
+  - component: {fileID: 1304540368}
   m_Layer: 5
   m_Name: Draw Patrol Sketch
   m_TagString: Untagged
@@ -3878,6 +4061,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304540363}
   m_CullTransparentMesh: 1
+--- !u!114 &1304540368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304540363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1338204346
 GameObject:
   m_ObjectHideFlags: 0
@@ -3890,6 +4086,7 @@ GameObject:
   - component: {fileID: 1338204350}
   - component: {fileID: 1338204349}
   - component: {fileID: 1338204348}
+  - component: {fileID: 1338204351}
   m_Layer: 5
   m_Name: Lego Sketch
   m_TagString: Untagged
@@ -3998,6 +4195,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338204346}
   m_CullTransparentMesh: 1
+--- !u!114 &1338204351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338204346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1345557017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4143,6 +4353,7 @@ GameObject:
   - component: {fileID: 1349600596}
   - component: {fileID: 1349600595}
   - component: {fileID: 1349600594}
+  - component: {fileID: 1349600597}
   m_Layer: 5
   m_Name: SpiderMan Sketch
   m_TagString: Untagged
@@ -4251,6 +4462,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349600592}
   m_CullTransparentMesh: 1
+--- !u!114 &1349600597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349600592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1367481486
 GameObject:
   m_ObjectHideFlags: 0
@@ -4263,6 +4487,7 @@ GameObject:
   - component: {fileID: 1367481490}
   - component: {fileID: 1367481489}
   - component: {fileID: 1367481488}
+  - component: {fileID: 1367481491}
   m_Layer: 5
   m_Name: Frozen Girls Sketch
   m_TagString: Untagged
@@ -4371,6 +4596,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367481486}
   m_CullTransparentMesh: 1
+--- !u!114 &1367481491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367481486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1372267282
 GameObject:
   m_ObjectHideFlags: 0
@@ -4427,6 +4665,7 @@ GameObject:
   - component: {fileID: 1394626554}
   - component: {fileID: 1394626553}
   - component: {fileID: 1394626552}
+  - component: {fileID: 1394626555}
   m_Layer: 5
   m_Name: Turtles Sketch
   m_TagString: Untagged
@@ -4535,6 +4774,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394626550}
   m_CullTransparentMesh: 1
+--- !u!114 &1394626555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394626550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1472492532
 GameObject:
   m_ObjectHideFlags: 0
@@ -4748,6 +5000,7 @@ GameObject:
   - component: {fileID: 1520130273}
   - component: {fileID: 1520130272}
   - component: {fileID: 1520130271}
+  - component: {fileID: 1520130274}
   m_Layer: 5
   m_Name: Naruto2 Sketch
   m_TagString: Untagged
@@ -4856,6 +5109,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520130269}
   m_CullTransparentMesh: 1
+--- !u!114 &1520130274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520130269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1540046101
 GameObject:
   m_ObjectHideFlags: 0
@@ -5002,6 +5268,7 @@ GameObject:
   - component: {fileID: 1551773874}
   - component: {fileID: 1551773873}
   - component: {fileID: 1551773872}
+  - component: {fileID: 1551773875}
   m_Layer: 5
   m_Name: Mario Brothers Sketch
   m_TagString: Untagged
@@ -5110,6 +5377,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551773870}
   m_CullTransparentMesh: 1
+--- !u!114 &1551773875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551773870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1553518481
 GameObject:
   m_ObjectHideFlags: 0
@@ -5185,6 +5465,7 @@ GameObject:
   - component: {fileID: 1564350518}
   - component: {fileID: 1564350517}
   - component: {fileID: 1564350516}
+  - component: {fileID: 1564350519}
   m_Layer: 5
   m_Name: Minion2 Sketch
   m_TagString: Untagged
@@ -5293,6 +5574,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564350514}
   m_CullTransparentMesh: 1
+--- !u!114 &1564350519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564350514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1565675143
 GameObject:
   m_ObjectHideFlags: 0
@@ -5305,6 +5599,7 @@ GameObject:
   - component: {fileID: 1565675147}
   - component: {fileID: 1565675146}
   - component: {fileID: 1565675145}
+  - component: {fileID: 1565675148}
   m_Layer: 5
   m_Name: Spongebob Sketch
   m_TagString: Untagged
@@ -5374,7 +5669,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1565675146}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1565675148}
+        m_TargetAssemblyTypeName: SketchController, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1565675146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5413,6 +5720,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565675143}
   m_CullTransparentMesh: 1
+--- !u!114 &1565675148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565675143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 21300000, guid: 21f75ce4c7820924c8aad6fbc130061c, type: 3}
 --- !u!1 &1575223032
 GameObject:
   m_ObjectHideFlags: 0
@@ -5425,6 +5745,7 @@ GameObject:
   - component: {fileID: 1575223036}
   - component: {fileID: 1575223035}
   - component: {fileID: 1575223034}
+  - component: {fileID: 1575223037}
   m_Layer: 5
   m_Name: Minion1 Sketch
   m_TagString: Untagged
@@ -5533,6 +5854,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575223032}
   m_CullTransparentMesh: 1
+--- !u!114 &1575223037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575223032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1578536460
 GameObject:
   m_ObjectHideFlags: 0
@@ -5545,6 +5879,7 @@ GameObject:
   - component: {fileID: 1578536464}
   - component: {fileID: 1578536463}
   - component: {fileID: 1578536462}
+  - component: {fileID: 1578536465}
   m_Layer: 5
   m_Name: Babie flag1 Sketch
   m_TagString: Untagged
@@ -5653,6 +5988,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578536460}
   m_CullTransparentMesh: 1
+--- !u!114 &1578536465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578536460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1604235508
 GameObject:
   m_ObjectHideFlags: 0
@@ -5834,6 +6182,7 @@ GameObject:
   - component: {fileID: 1653673724}
   - component: {fileID: 1653673723}
   - component: {fileID: 1653673722}
+  - component: {fileID: 1653673725}
   m_Layer: 5
   m_Name: PJ Sketch
   m_TagString: Untagged
@@ -5942,6 +6291,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653673720}
   m_CullTransparentMesh: 1
+--- !u!114 &1653673725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653673720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1668185632
 GameObject:
   m_ObjectHideFlags: 0
@@ -6610,6 +6972,7 @@ GameObject:
   - component: {fileID: 1782751790}
   - component: {fileID: 1782751789}
   - component: {fileID: 1782751788}
+  - component: {fileID: 1782751791}
   m_Layer: 5
   m_Name: Caring bears Sketch
   m_TagString: Untagged
@@ -6718,6 +7081,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782751786}
   m_CullTransparentMesh: 1
+--- !u!114 &1782751791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782751786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1787725658
 GameObject:
   m_ObjectHideFlags: 0
@@ -7176,6 +7552,7 @@ GameObject:
   - component: {fileID: 1944055929}
   - component: {fileID: 1944055928}
   - component: {fileID: 1944055927}
+  - component: {fileID: 1944055930}
   m_Layer: 5
   m_Name: Hulk Sketch
   m_TagString: Untagged
@@ -7284,6 +7661,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944055925}
   m_CullTransparentMesh: 1
+--- !u!114 &1944055930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944055925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &1952963020
 GameObject:
   m_ObjectHideFlags: 0
@@ -7296,6 +7686,7 @@ GameObject:
   - component: {fileID: 1952963024}
   - component: {fileID: 1952963023}
   - component: {fileID: 1952963022}
+  - component: {fileID: 1952963025}
   m_Layer: 5
   m_Name: Iron Man Punch Sketch
   m_TagString: Untagged
@@ -7365,7 +7756,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1952963023}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1952963025}
+        m_TargetAssemblyTypeName: SketchController, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1952963023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7404,6 +7807,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952963020}
   m_CullTransparentMesh: 1
+--- !u!114 &1952963025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952963020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 21300000, guid: 4e71e4626ddd2cc449ec1d8414a19efc, type: 3}
 --- !u!1 &2001594464
 GameObject:
   m_ObjectHideFlags: 0
@@ -7416,6 +7832,7 @@ GameObject:
   - component: {fileID: 2001594468}
   - component: {fileID: 2001594467}
   - component: {fileID: 2001594466}
+  - component: {fileID: 2001594469}
   m_Layer: 5
   m_Name: Naruto1 Sketch
   m_TagString: Untagged
@@ -7524,6 +7941,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001594464}
   m_CullTransparentMesh: 1
+--- !u!114 &2001594469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001594464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &2049620196
 GameObject:
   m_ObjectHideFlags: 0
@@ -7774,6 +8204,7 @@ GameObject:
   - component: {fileID: 2117097522}
   - component: {fileID: 2117097521}
   - component: {fileID: 2117097520}
+  - component: {fileID: 2117097523}
   m_Layer: 5
   m_Name: Mario Sketch
   m_TagString: Untagged
@@ -7882,6 +8313,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117097518}
   m_CullTransparentMesh: 1
+--- !u!114 &2117097523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117097518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c6edc519f6dea418acb3a7a9b981d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sketch: {fileID: 0}
 --- !u!1 &2136489371
 GameObject:
   m_ObjectHideFlags: 0
@@ -7929,6 +8373,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136489371}
   m_CullTransparentMesh: 1
+--- !u!1 &2142645120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2142645121}
+  - component: {fileID: 2142645122}
+  m_Layer: 0
+  m_Name: SketchManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2142645121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142645120}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2142645122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142645120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36e9329aaa365d4ca184d8a7685ee36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -7940,3 +8428,4 @@ SceneRoots:
   - {fileID: 1933745047}
   - {fileID: 1706769051}
   - {fileID: 729261016}
+  - {fileID: 2142645121}

@@ -3,7 +3,6 @@ using System.IO;
 using Firebase.Extensions;
 using Firebase.Storage;
 
-
 public class UploadFile : MonoBehaviour
 {
     FirebaseStorage storage;
@@ -52,9 +51,11 @@ public class UploadFile : MonoBehaviour
 
     private void DelayedUpload()
     {
+        Debug.Log(User.Instance.NumberOfDrawings);
         string fileName = User.Instance.NumberOfDrawings + ".png";
         string filePath = Path.Combine(User.Instance.UserDirectoryPath, fileName);
 
         UploadImageFromPath(filePath, fileName);
+        User.Instance.IncrementNumberOfDrawings();
     }
 }
