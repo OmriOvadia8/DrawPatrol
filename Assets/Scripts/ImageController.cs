@@ -1,48 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ImageController : MonoBehaviour
 {
-
-    [SerializeField]
-    public GameObject BigDisplayPrefab; 
     private Image thumbnailImage;
-    private Image bigImg;
+    private Image bigDisplay;
 
-    private GameObject canvas;
-    private GameObject bigDisplay;
+    private void Awake()
+    {
+        thumbnailImage = GetComponent<Image>();
+        bigDisplay = GameObject.Find("Big Display").GetComponent<Image>();
+    }
 
     void Start()
     {
-        // Find the Canvas
-        canvas = GameObject.FindWithTag("UI");
-    }
-    
-    public void DisplayBig()
-    {
-        thumbnailImage = this.GetComponent<Image>();
-        
-        // Instantiate the BigDisplayPrefab as a child of the Canvas
-        bigDisplay = Instantiate(BigDisplayPrefab, canvas.transform);
-    
-        bigImg = bigDisplay.GetComponent<Image>();
-        bigImg.sprite = thumbnailImage.sprite;
+        BigDisplaySetActive(false);
     }
 
-    public void CloseBigDisplay()
+    public void DisplayBig()
     {
         if (bigDisplay != null)
         {
-            Destroy(bigDisplay);
+            bigDisplay.sprite = thumbnailImage.sprite;
+            BigDisplaySetActive(true);
+        }
+        else
+        {
+            Debug.LogError("Big Display object not found in the scene.");
         }
     }
-    
-    public void OnCloseButtonClick()
-    {
-        CloseBigDisplay();
-    }
 
-    
+    private void BigDisplaySetActive(bool value)
+    {
+        bigDisplay.gameObject.SetActive(value);
+    }
 }
