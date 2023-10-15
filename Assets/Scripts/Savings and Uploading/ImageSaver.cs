@@ -7,5 +7,6 @@ public class ImageSaver : MonoBehaviour
     public void SaveImage()
     {
         SaveDrawing.TakeScreenshot_Static(width,height);
+        FirebaseManager.Instance.AnalyticsManager.ReportEvent(DPEventType.drawing_saved);
     }
 }

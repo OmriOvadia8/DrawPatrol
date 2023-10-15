@@ -23,6 +23,7 @@ public class ImageController : MonoBehaviour
         {
             bigDisplay.sprite = thumbnailImage.sprite;
             BigDisplaySetActive(true);
+            FirebaseManager.Instance.AnalyticsManager.ReportEvent(DPEventType.big_display);
         }
         else
         {

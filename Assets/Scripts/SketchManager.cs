@@ -18,9 +18,4 @@ public class SketchManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public void ResetPrefs()
-    {
-        PlayerPrefs.DeleteAll();
-    }
 }

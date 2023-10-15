@@ -45,6 +45,7 @@ public class UploadFile : MonoBehaviour
             {
                 Debug.Log("File Uploaded Successfully!");
                 uiControl.OpenSentCompletePopup();
+                FirebaseManager.Instance.AnalyticsManager.ReportEvent(DPEventType.image_uploaded);
             }
         });
     }

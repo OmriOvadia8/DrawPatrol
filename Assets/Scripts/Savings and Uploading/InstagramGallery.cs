@@ -9,5 +9,6 @@ public class InstagramGallery : MonoBehaviour
     public void OpenInstagram() 
     {
         Application.OpenURL(instagramURL);
+        FirebaseManager.Instance.AnalyticsManager.ReportEvent(DPEventType.open_instegram);
     }
 }
