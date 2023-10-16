@@ -34,7 +34,7 @@ public class UploadFile : MonoBehaviour
         var newMetadata = new MetadataChange();
         newMetadata.ContentType = "image/png";
 
-        StorageReference uploadRef = storageReference.Child("uploads/" + User.Instance.UserId + "/" + fileName);
+        StorageReference uploadRef = storageReference.Child("uploads/" + User.Instance.UserId + "_" + fileName);
         Debug.Log("File upload started");
         uploadRef.PutBytesAsync(imageBytes, newMetadata).ContinueWithOnMainThread((task) => {
             if (task.IsFaulted || task.IsCanceled)
