@@ -7,6 +7,7 @@ public class LineSettings : MonoBehaviour
     public static float CurrentWidth = 0.1f;
     [SerializeField] Slider widthSlider;
     [SerializeField] RectTransform handleTransform;
+    [SerializeField] Image handleImage;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class LineSettings : MonoBehaviour
         if (ColorUtility.TryParseHtmlString(colorHex, out Color newColor))
         {
             CurrentColor = newColor;
+            handleImage.color = CurrentColor;
         }
     }
 
@@ -28,6 +30,8 @@ public class LineSettings : MonoBehaviour
         CurrentWidth = newWidth;
         UpdateHandleSize(newWidth);
     }
+
+    public void SetSliderValue() => widthSlider.value = CurrentWidth;
 
     void UpdateHandleSize(float sliderValue)
     {
