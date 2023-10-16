@@ -24,6 +24,9 @@ public class Gallery : MonoBehaviour
                 Image thumbnailImage = thumbnail.GetComponent<Image>();
                 thumbnailImage.sprite = Sprite.Create(photoTexture, new Rect(0, 0, photoTexture.width, photoTexture.height), Vector2.one * 0.5f);
             }
+
+            RectTransform rt = galleryPanel.GetComponent<RectTransform>();
+            rt.sizeDelta = new Vector2(rt.sizeDelta.x, rt.sizeDelta.y + (450 * photoPaths.Length));
         }
         else
         {
