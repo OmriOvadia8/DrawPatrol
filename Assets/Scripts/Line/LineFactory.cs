@@ -1,12 +1,13 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-
 public class LineFactory : MonoBehaviour
 {
-    public GameObject linePrefab;
+    [SerializeField] GameObject linePrefab;
     Line activeLine;
     private int currentSortingOrder = 0;
+    private List<GameObject> lines = new List<GameObject>();
 
     void Update()
     {
@@ -16,7 +17,8 @@ public class LineFactory : MonoBehaviour
             {
                 GameObject newLine = Instantiate(linePrefab);
                 activeLine = newLine.GetComponent<Line>();
-                activeLine.GetComponent<LineRenderer>().sortingOrder = currentSortingOrder++;                 
+                activeLine.GetComponent<LineRenderer>().sortingOrder = currentSortingOrder++;
+                lines.Add(newLine);           
             }
         }
 
@@ -31,8 +33,17 @@ public class LineFactory : MonoBehaviour
             activeLine.UpdateLine(mousePos);
         }
     }
-    
-    
+
+    public void UndoLastLine()
+    {
+        if (lines.Count > 0)
+        {
+            GameObject lastLine = lines[lines.Count - 1]; 
+            lines.RemoveAt(lines.Count - 1); 
+            Destroy(lastLine);
+        }
+    }
+
     private bool IsPointerOverUIObject()
     {
         // Check if the mouse pointer is over a UI element
@@ -45,5 +56,4 @@ public class LineFactory : MonoBehaviour
 
         return results.Count > 0;
     }
-
 }
